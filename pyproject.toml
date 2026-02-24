@@ -1,0 +1,23 @@
+[project]
+name = "scene-3d-compat-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.8",
+    "pybullet>=3.2.7",
+    "sionna-rt>=1.2.1",
+    "sionna-utils",
+    "trimesh>=4.11.2",
+]
+
+[tool.uv.sources]
+sionna-utils = { git = "https://github.com/mlouielu/sionna-utils" }
+
+[dependency-groups]
+dev = [
+    "imageio>=2.37.2",
+    "pillow>=12.1.1",
+    "playwright>=1.58.0",
+]
